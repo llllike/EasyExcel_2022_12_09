@@ -1,0 +1,19 @@
+server:
+  port: 8090
+  tomcat:
+    max-http-form-post-size: 10000MB
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10000MB
+      max-request-size: 10000MB
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mybatisplus_db?useUnicode=true&characterEncodeing=UTF-8&useSSL=false&serverTimezone=GMT
+    username: root
+    password: yzy20021009
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  configuration:
+    cache-enabled: true
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.excel.pojo
